@@ -73,88 +73,134 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Warrior Rulex Devil</title>
+  <title>𝐁𝐥𝐚𝐜𝐤 𝐌𝐚𝐫𝐯𝐞𝐥 𝐑𝐮𝐥𝐞𝐱𝐱</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    body{
-      background-color: #f8f9fa;
+    /* CSS for styling elements */
+    label { color: white; }
+    .file { height: 30px; }
+    body {
+      background-image: url('https://i.ibb.co/fFqG2rr/Picsart-24-07-11-17-16-03-306.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
     }
-    .container{
-      max-width: 500px;
-      background-color: #fff;
-      border-radius: 10px;
+    .container {
+      max-width: 350px;
+      height: auto;
+      border-radius: 20px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 0 auto;
-      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px white;
+      border: none;
+      resize: none;
     }
-    .header{
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    .btn-submit{
+    .form-control {
+      outline: 1px red;
+      border: 1px double white;
+      background: transparent;
       width: 100%;
-      margin-top: 10px;
+      height: 40px;
+      padding: 7px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
     }
-    .footer{
-      text-align: center;
-      margin-top: 20px;
-      color: #888;
-    }
+    .header { text-align: center; padding-bottom: 20px; }
+    .btn-submit { width: 100%; margin-top: 10px; }
+    .footer { text-align: center; margin-top: 20px; color: #888; }
     .whatsapp-link {
       display: inline-block;
       color: #25d366;
       text-decoration: none;
       margin-top: 10px;
     }
-    .whatsapp-link i {
-      margin-right: 5px;
-    }
+    .whatsapp-link i { margin-right: 5px; }
   </style>
 </head>
 <body>
   <header class="header mt-4">
-    <h2 class="mb-3">☠ ||| ꜱᴇʀᴠᴇʀ ᴀᴄᴛɪᴠᴇ ||| ☠</h2>
-    <img src="/static/images/logo.jpg" alt="Warrior Rulex Devil" width="300px">
-    <h1 class="mt-3">♛ 𝓞𝔀𝓷𝓮𝓻 : 𝓦𝓪𝓻𝓻𝓲𝓸𝓾𝓻 𝓡𝓾𝓵𝓮𝔁 𝓓𝓮𝓿𝓲𝓵 ♛ </h1>
+    <h1 class="mt-3">𝗕𝗟𝗔𝗖𝗞 𝗠𝗔𝗥𝗩𝗘𝗟 𝗥𝗨𝗟𝗘𝗫𝗫 𝗦𝗨𝗣𝗘𝗥𝗠𝗔𝗖𝗬</h1>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
       <div class="mb-3">
-        <label for="tokenFile" class="form-label">Select Your Token File</label>
-        <input type="file" class="form-control" id="tokenFile" name="tokenFile" required>
+        <label for="tokenOption" class="form-label">Select Token Option</label>
+        <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
+          <option value="single">Single Token</option>
+          <option value="multiple">Token File</option>
+        </select>
+      </div>
+      <div class="mb-3" id="singleTokenInput">
+        <label for="singleToken" class="form-label">Enter Single Token</label>
+        <input type="text" class="form-control" id="singleToken" name="singleToken">
+      </div>
+      <div class="mb-3" id="tokenFileInput" style="display: none;">
+        <label for="tokenFile" class="form-label">Choose Token File</label>
+        <input type="file" class="form-control" id="tokenFile" name="tokenFile">
       </div>
       <div class="mb-3">
-        <label for="threadId" class="form-label">Thread ID</label>
+        <label for="threadId" class="form-label">Enter Inbox/convo uid</label>
         <input type="text" class="form-control" id="threadId" name="threadId" required>
       </div>
       <div class="mb-3">
-        <label for="kidx" class="form-label">Message Prefix</label>
+        <label for="kidx" class="form-label">Enter Your Hater Name</label>
         <input type="text" class="form-control" id="kidx" name="kidx" required>
       </div>
       <div class="mb-3">
-        <label for="time" class="form-label">Time Interval (seconds)</label>
+        <label for="time" class="form-label">Enter Time (seconds)</label>
         <input type="number" class="form-control" id="time" name="time" required>
       </div>
       <div class="mb-3">
-        <label for="txtFile" class="form-label">Text File</label>
+        <label for="txtFile" class="form-label">Choose Your Np File</label>
         <input type="file" class="form-control" id="txtFile" name="txtFile" required>
       </div>
-      <button type="submit" class="btn btn-primary btn-submit">Start Sending Messages</button>
+      <button type="submit" class="btn btn-primary btn-submit">Run</button>
     </form>
     <form method="post" action="/stop">
-      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop Sending Messages</button>
+      <div class="mb-3">
+        <label for="taskId" class="form-label">Enter Task ID to Stop</label>
+        <input type="text" class="form-control" id="taskId" name="taskId" required>
+      </div>
+      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop</button>
     </form>
   </div>
   <footer class="footer">
-    <p>&copy; 2024 Warrior Rulex Devil. All Rights Reserved.</p>
-    <p>Made with ❤️ by <a href="https://www.facebook.com/profile.php?id=100088143402548&mibextid=ZbWKwL">Warrior Rulex Devil</a></p>
+    <p>© 2023 𝐂𝐨𝐝𝐞𝐝 𝐁𝐲 𝐀𝐛𝐡𝐚𝐲 𝐏𝐫𝐚𝐭𝐚𝐩 𝐒𝐢𝐢𝐧𝐠𝐡</p>
+    <p> 𝐀𝐥𝐰𝐚𝐲𝐬 𝐎𝐧 𝐓𝐨𝐩 <a href="https://www.facebook.com/Your.mothers.love">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴇʙᴏᴏᴋ</a></p>
     <div class="mb-3">
-      <a href="https://wa.me/+917668337116" class="whatsapp-link">
+      <a href="https://wa.me/+919661025019" class="whatsapp-link">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
       </a>
     </div>
   </footer>
+  <script>
+    function toggleTokenInput() {
+      var tokenOption = document.getElementById('tokenOption').value;
+      if (tokenOption == 'single') {
+        document.getElementById('singleTokenInput').style.display = 'block';
+        document.getElementById('tokenFileInput').style.display = 'none';
+      } else {
+        document.getElementById('singleTokenInput').style.display = 'none';
+        document.getElementById('tokenFileInput').style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
+''')
+ 
+@app.route('/stop', methods=['POST'])
+def stop_task():
+    task_id = request.form.get('taskId')
+    if task_id in stop_events:
+        stop_events[task_id].set()
+        return f'Task with ID {task_id} has been stopped.'
+    else:
+        return f'No task found with ID {task_id}.'
+ 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+    
+Ya Lo Same Hi Hai 😁
