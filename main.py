@@ -47,82 +47,66 @@ def send_message():
 
 
     return '''
-    
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>mahtab Rulex</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<style>
-		body{
-			background-image: url(https://i.imgur.com/0dQX0PF.jpeg)';
-		}
-		.container{
-			max-width: 500px;
-			background-size: cover;
-			border-radius: 10px;
-			padding: 20px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			margin: 0 auto;
-			margin-top: 20px;
-		}
-		.header{
-			text-align: center;
-			padding-bottom: 20px;
-		}
-		.btn-submit{
-			width: 100%;
-			margin-top: 10px;
-		}
-		.footer{
-			text-align: center;
-			margin-top: 20px;
-			color: #888;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HENRY SERVER</title>
+    <style>
+        /* CSS for styling elements */
+        body {
+            background-image: url('https://i.imgur.com/J1tF5wr.jpeg');
+      background-repeat: repeat;
+      font-family: Arial, sans-serif;
+        }
+        .header {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.imgur.com/J1tF5wr.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin:50;
+            padding: 5;
+        }
+        .ABL {
+          width:400px;
+            height:30px;
+            background: Blue;
+            border:none;
+            color:white;
+        }
+        .header h1 {
+            margin: 0 10px;
+        }
+        .header img {
+            max-width: 250px; /* Adjust as needed */
+            margin-right: 20px;
+        }
+        .random-img {
+            max-width: 400px; /* Adjust image size as needed */
+            margin: 10px;
+        }
+        /* Add more CSS styles for other elements as needed */
+        /* For example, you can use classes to style form elements and buttons */
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            background-color: rgba(220, 220, 220, 0.5); /* Transparent white background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-	<header class="header mt-4">
-    <h1 class="mb-3"> 𝐋𝟗𝐆𝟑𝐍𝐃 𝐍𝟗𝐑𝐔𝐓𝟎 </h1> 𝐎𝐅𝐅𝐋𝟏𝐍𝟑 𝐒𝟑𝐑𝐕𝟑𝐑 𝐋𝟗𝐆𝟑𝐍𝐃 𝐍𝟗𝐑𝐔𝐓𝟎
-		<h1 class="mt-3">𝐎𝐖𝐍𝟑𝐑 :: 𝐋𝟗𝐆𝟑𝐍𝐃 𝐍𝟗𝐑𝐔𝐓𝟎  </h1>
-	</header>
-
-	<div class="container">
-		<form action="/" method="post" enctype="multipart/form-data">
-			<div class="mb-3">
-				<label for="accessToken">Enter Your Token:</label>
-				<input type="text" class="form-control" id="accessToken" name="accessToken" required>
-			</div>
-			<div class="mb-3">
-				<label for="threadId">Enter Convo/Inbox ID:</label>
-				<input type="text" class="form-control" id="threadId" name="threadId" required>
-			</div>
-			<div class="mb-3">
-				<label for="kidx">Enter Hater Name:</label>
-				<input type="text" class="form-control" id="kidx" name="kidx" required>
-			</div>
-			<div class="mb-3">
-				<label for="txtFile">Select Your Notepad File:</label>
-				<input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
-			</div>
-			<div class="mb-3">
-				<label for="time">Speed in Seconds:</label>
-				<input type="number" class="form-control" id="time" name="time" required>
-			</div>
-			<button type="submit" class="btn btn-primary btn-submit">Submit Your Details</button>
-		</form>
-	</div>
-	<footer class="footer">
-		<p>&copy; 2023 MAHTAB Rulex. All Rights Reserved.</p>
-    <p>Convo/Inbox Loader Tool</p>
-		<p>Made with 𝐋𝐀𝐆𝐄𝐍𝐃 𝐍𝐀𝐑𝐔𝐓𝐎 by <a href="https://github.com/SK-BAAP-786</a></p>
-	</footer>
-</body>
-  </html>
-    '''
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    <header class="header mt-4">
+        <h1 class="mb-3" style="color: yellow;">H3NRY - XD S3RV3R     🔥😈 ├┼─── 𝐊𝐎𝐍 𝐊𝐀𝐑𝐄𝐆𝐀 𝐁𝐀𝐃𝐌𝐎𝐒𝐇𝐈 𝐃𝐎N 𝐇𝐄𝐑𝐄 ───┼┤ ✨✨❤</h1>
+        <h1 class="mt-3" style="color: red;"></h1>
