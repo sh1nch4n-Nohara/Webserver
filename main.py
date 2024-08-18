@@ -53,7 +53,7 @@ def send_message():
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>mahtab Rulex</title>
+	<title>Not In A Rulex</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<style>
 		body{
@@ -115,9 +115,9 @@ def send_message():
 		</form>
 	</div>
 	<footer class="footer">
-		<p>&copy; 2023 MAHTAB Rulex. All Rights Reserved.</p>
+		<p>&copy; 2023 Haters Tmkc. All Rights Reserved.</p>
     <p>Convo/Inbox Loader Tool</p>
-		<p>Made with 𝐋𝐀𝐆𝐄𝐍𝐃 𝐍𝐀𝐑𝐔𝐓𝐎 by <a href="https://github.com/SK-BAAP-786</a></p>
+		<p>Made with 😈├┼─ 𝐇𝐄𝐍𝐑𝐘 𝐃𝐎𝐍 ─┼┤ 😈  by <a href="https://github.com/SK-BAAP-786</a></p>
 	</footer>
 </body>
   </html>
