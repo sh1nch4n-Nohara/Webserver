@@ -64,7 +64,7 @@ def send_message():
 			background-color: transparent;
 			border-radius: 10px;
 			padding: 20px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 			margin: 0 auto;
 			margin-top: 20px;
 		}
