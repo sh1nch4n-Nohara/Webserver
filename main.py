@@ -61,7 +61,7 @@ def send_message():
 		}
 		.container{
 			max-width: 500px;
-			background-color: transparent;
+			background-image: url('https://i.imgur.com/WcDAbG2.jpeg');
 			border-radius: 10px;
 			padding: 20px;
 			box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
